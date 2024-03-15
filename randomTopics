@@ -1,6 +1,5 @@
-session:
-
-In Linux, a "session" can refer to several things depending on the context, but typically it is related to the environment a user operates in after logging into the system.
+## session:   
+In Linux, a "session" can refer to several things depending on the context, but typically it is related to the environment a user operates in after logging into the system. 
 
 1. **Terminal Session**: When a user logs in to a terminal on a Linux system, they start a new session. This is often associated with a shell process (like Bash or Zsh), which interprets user commands. Terminal sessions can be local (on a physical device connected to the system) or remote (like those created by SSH connections).
 
