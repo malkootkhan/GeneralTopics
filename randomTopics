@@ -48,3 +48,17 @@ Applying a patch in Linux is a common task when you're dealing with software dev
    - Once you've successfully applied the patch and verified the changes, you can delete the patch file if you no longer need it. If you made a backup of your project before applying the patch, make sure everything is working as expected before you remove the backup.
 
 Remember, the exact command and options for the `patch` command may vary depending on the specific circumstances, such as the directory structure and the format of the patch file. Adjust the `-p` option as necessary, and consult `man patch` for more information on the available options and their meanings.
+## Service manager:   
+In the context of the Linux kernel, a "service manager" usually refers to a system or process that handles the starting, stopping, and managing of background services (daemons). These services are applications that run in the background rather than under direct control of the user. They can perform a wide variety of functions such as managing network connections, broadcasting log messages, or handling user sessions.
+
+The most common service manager in Linux systems is `systemd`, which has largely replaced older systems like `init` (from SysV) and `upstart`. `systemd` provides more than just service management; it is a system and service manager that operates as the first process (PID 1) and starts the rest of the system. It's responsible for initializing the system after the Linux kernel has booted.
+
+The main tasks of a service manager like `systemd` include:
+
+1. **Service Management**: Starting, stopping, and restarting services based on user commands, system events, or boot-up scripts.
+2. **Dependency Handling**: Ensuring services start in the correct order based on their dependencies.
+3. **Logging**: Collecting and managing logs from various services.
+4. **Resource Management**: Assigning system resources like CPU time, memory, and disk space to different services.
+5. **Monitoring**: Watching services for crashes or unacceptable behavior, and restarting them if necessary.
+
+Other examples of service managers include `runit`, `s6`, and `OpenRC`, though they are less commonly used than `systemd`.
